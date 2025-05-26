@@ -42,7 +42,7 @@ jobs:
           password: ${{ secrets.CR_PATH }}
       - name: Extract metadata (labels, tags) for Docker
         id: meta
-        uses: docker/metadata-actions@v5
+        uses: docker/metadata-action@v5
         with:
           images: ${{ env.IMAGE_REGISTRY_URL }}/${{ github.repository }}/${{ env.DOCKER_IMAGE_NAME }}
           tags: |
