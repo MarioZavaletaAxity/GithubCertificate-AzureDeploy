@@ -48,7 +48,7 @@ jobs:
           tags: |
             type=sha,format=long,prefix=
       - name: Build and push docker image
-        uses: docker/build-push-actions@v5
+        uses: docker/build-push-action@v5
         with:
           context: .
           push: true
